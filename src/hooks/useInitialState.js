@@ -19,7 +19,7 @@ const useInitialState = () => {
             ...state,
             cart: state.cart.filter(items => items.id !== payload.id),
         });
-    }
+    };
 
     return {
         state,
