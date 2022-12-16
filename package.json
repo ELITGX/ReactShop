@@ -2,7 +2,7 @@
   "homepage": "https://elitgx.github.io/ReactShop/",
   "name": "react-shop",
   "version": "1.0.0",
-  "description": "react eshop",
+  "description": "e-commerce project developed in React.js",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
