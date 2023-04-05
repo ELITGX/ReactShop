@@ -64,7 +64,7 @@ const Header = () => {
 						className="navbar-email"
 						onClick={handleClickDesktop}
 					>
-						Gustavo Ortega
+						gustavo_ortega@gmailDemo.com
 					</li>
 					<li
 						className="navbar-shopping-cart"
