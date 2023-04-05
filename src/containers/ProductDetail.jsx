@@ -2,13 +2,19 @@ import React from 'react';
 import ProductInfo from '../components/ProductInfo';
 import '../styles/ProductDetail.scss';
 
-const ProductDetail = () => {
+import close from '@icons/icon_close.png';
+
+const ProductDetail = ({ product, setToggleProduct, handleClick }) => {
 	return (
 		<aside className="ProductDetail">
-			<div className="ProductDetail-close">
-				<img src="./icons/icon_close.png" alt="close" />
+			<div className="ProductDetail-close" onClick={() => setToggleProduct(false)}>
+				<img src={close} alt="close" />
 			</div>
-			<ProductInfo />
+			<ProductInfo
+				product={product}
+				setToggleProduct={setToggleProduct}
+				handleClick={handleClick}
+			/>
 		</aside>
 	);
 }
