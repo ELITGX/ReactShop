@@ -10,6 +10,12 @@ const MyOrder = ({ toggleOrders, setToggleOrders }) => {
 	const [ toggle, setToggle ] = useState(false);
 	const { state } = useContext(AppContext);
 
+	const sumTotal = () => {
+		const reducer = (accumalator, currentValue) => accumalator + currentValue.price;
+		const sum = satate.cart.reduce(reducer, 0);
+		return sum;
+	}
+
 	return (
 		<aside className="MyOrder">
 			<div
@@ -30,7 +36,7 @@ const MyOrder = ({ toggleOrders, setToggleOrders }) => {
 					<p>
 						<span>Total</span>
 					</p>
-					<p>${state.total}</p>
+					<p>${sumTotal}</p>
 				</div>
 				<button className="primary-button" onClick={() => setToggle(true)}>
 					Checkout
