@@ -9,6 +9,7 @@ import arrow from '@icons/flechita.svg';
 const MyOrder = ({ toggleOrders, setToggleOrders }) => {
 	const [ toggle, setToggle ] = useState(false);
 	const { state } = useContext(AppContext);
+
 	return (
 		<aside className="MyOrder">
 			<div
